@@ -1,0 +1,9 @@
+services:
+  web-api:
+    build:
+      context: .
+      dockerfile: src/Web.Api/Dockerfile
+    container_name: web-api
+    ports:
+      - "8080:8080"
+      - "8081:8081"
