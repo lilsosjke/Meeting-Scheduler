@@ -146,5 +146,3 @@ Serilog is set up already. You get structured logs in the console. Middleware ad
 - Endpoints implement a small `IEndpoint` interface and get auto-registered.
 - Commands/Queries go through handlers (CQRS style).
 - There's a `Result<T>` type for success/error instead of throwing everywhere.
-
-Feel free to improve this README. :)
