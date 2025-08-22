@@ -14,7 +14,7 @@ Features:
 - Health check endpoint
 - Docker support
 
-## Project layout (short version)
+## Project layout 
 ```
 src/
   Domain        -> core entities and domain events
@@ -40,7 +40,7 @@ dotnet build
 ```
 Warnings are treated as errors, so fix them if build fails.
 
-## Run the API (normal)
+## Run the API
 ```powershell
 cd src/Web.Api
 dotnet run
@@ -82,7 +82,7 @@ GET /health
 ```
 Returns JSON with the health status.
 
-## API Endpoints (current ones)
+## API Endpoints
 
 ### 1. Create user
 ```
@@ -142,7 +142,7 @@ MeetingDto
 ## Logging
 Serilog is set up already. You get structured logs in the console. Middleware adds some extra stuff (like correlation ids and timing).
 
-## How things are wired (short)
+## How things are wired
 - Endpoints implement a small `IEndpoint` interface and get auto-registered.
 - Commands/Queries go through handlers (CQRS style).
 - There's a `Result<T>` type for success/error instead of throwing everywhere.
